@@ -1,0 +1,73 @@
+// Style Teaser
+.container-teaser {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 130px;
+    padding-bottom: 36px;
+    padding-right: 16px;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-teaser {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        background: rgba(10, 12, 16, 0.7);
+    }
+
+    img {
+        object-fit: cover;
+    }
+}
+
+.logo-teaser {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        max-width: 80%;
+    }
+}
+
+.content-teaser {
+    width: 100%;
+    padding-top: 20px;
+
+    p {
+        text-align: center;
+        font-size: 19px;
+        color: white;
+        letter-spacing: 2px;
+        padding-bottom: 5px;
+    }
+}
+
+.yt-teaser {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 530px;
+    margin-top: 15px;
+}
+
+@include responsive-teaser();

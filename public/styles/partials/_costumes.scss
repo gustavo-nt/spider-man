@@ -1,0 +1,212 @@
+// Style Costumes
+.container-costumes {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 130px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 0;
+    overflow: hidden;
+
+    .swiper-container-costumes {
+        margin-bottom: 40px;
+    }
+}
+
+.container-concepts {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 36px;
+    overflow: hidden;
+}
+
+.navigation-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    svg {
+        width: auto;
+        height: 24px;
+        cursor: pointer;
+        margin-bottom: 15px;
+
+        polygon {
+            transition: .3s ease;
+            fill: white;
+        }
+
+        &:hover {
+            polygon {
+                fill: $red-dark;
+            }
+        }
+    }
+}
+
+.container-item {
+    max-width: 350px;
+    background-color: $blue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+  
+    img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 25px 20px 25px;
+    color: $white;
+
+    h1 {
+        width: 100%;
+        font-size: 22px;
+        overflow: hidden;
+        text-align: center;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .info {
+        display: flex;
+
+        > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            padding: 10px 15px 10px 15px;
+      
+            :first-child{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            
+                svg {
+                    width: auto;
+                    height: 22px;
+                }
+
+                .message {
+                    margin-left: 10px;
+                    letter-spacing: 1px;
+                    color: $white;
+                }
+
+                &:hover {
+                    .tooltip {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        width: 100%;
+        list-style: none;
+        flex-direction: column;
+        justify-content: center;
+
+        li {
+            display: flex;
+            align-items: center;
+            padding: 5px 0;
+            justify-content: flex-start;
+
+            svg {
+                width: auto;
+                height: 20px;
+
+                &.clock {
+                    path {
+                        fill: $white;
+                    }
+                }
+            }
+
+            span, a {
+                padding-top: 3px;
+                padding-left: 10px;
+            }
+
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .description {
+        position: relative;
+
+        p {
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            min-height: 108px;
+            margin-top: 5px;
+            -webkit-box-orient: vertical;
+        }
+    
+
+        &:hover {
+            .tooltip {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.content-loader {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    height: 600px;
+}
+
+.tooltip {
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    background-color: $white;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    bottom: 105%;
+
+    span {
+        color: $gray-3;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 40%;
+        top: 100%;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 7px solid $white;
+    }
+}

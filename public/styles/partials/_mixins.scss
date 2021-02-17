@@ -1,0 +1,108 @@
+// Mixins Responsive
+@mixin responsive-menu() {
+    @media screen and (max-width: 960px) {
+        @content;
+    }  
+}
+
+@mixin responsive-home() {
+    @media screen and (max-width: 960px) {
+        @content;
+    }  
+}
+
+@mixin responsive-teaser {
+    @media screen and (max-height: 930px) {
+        .yt-teaser {
+            height: 480px;
+        }
+    }
+
+    @media screen and (max-height: 880px) {
+        .yt-teaser {
+            height: 430px;
+        }
+    }
+    
+    @media screen and (max-height: 830px) {
+        .yt-teaser {
+            height: 380px;
+        }
+    }
+
+    @media screen and (max-height: 780px) {
+        .yt-teaser {
+            height: 330px;
+        }
+    }
+
+    @media screen and (max-height: 730px) {
+        .yt-teaser {
+            height: 280px;
+        }
+    }
+
+    @media screen and (max-height: 600px) {
+        .title div {
+            width: 22%;
+        }
+    }
+}   
+
+@mixin responsive-about {
+    @media screen and (max-width: 930px) {
+        .content-about {
+            flex-direction: column;
+            align-items: center;
+            padding-top: 30px;
+        
+            img {
+                padding-left: 0;
+                padding-bottom: 30px;
+            }
+        
+            .info {
+                max-width: 85%;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
+        .main-features {
+            margin-top: 40px;
+            max-width: 85%;
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .items {
+                margin-bottom: 15px
+            }
+        }
+    }
+
+    @media screen and (max-width: 560px) {
+        .content-about .info {
+            max-width: 90%;
+        }
+
+        .main-features { 
+            max-width: 90%;
+        }
+    }
+}   
+
+@mixin responsive-characteres {
+    @media screen and (min-width: 660px) {
+        .grid-characters {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media screen and (min-width: 960px) {
+        .grid-characters {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}  

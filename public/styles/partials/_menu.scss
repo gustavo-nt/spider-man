@@ -1,0 +1,246 @@
+// Style Menu
+header {
+    width: 100%;
+    padding: 16px 0;
+    position: fixed;
+    z-index: 800;
+    transition: background 0.7s ease;
+}
+
+.navbar {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 10000;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+    li {
+        margin-left: 24px;
+    }
+
+    @include responsive-menu() {
+        display: none;
+    }
+}
+
+.logo {
+    max-width: 88px;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 8px 16px;
+    color: $gray-3;
+    transition: .7s ease;
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+
+    &.be-your-self {
+        color: $red-light;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        width: 2px;
+        height: 0px;
+        transition: .7s ease;
+        background: linear-gradient(180deg, rgba(233, 29, 34, 0) 0%, #e91d22 100%);
+    }
+
+    &:hover {
+        color: $white-light;
+
+        &.be-your-self {
+            color: $red-light;
+        }
+
+        &::after {
+            height: 40px;
+        }
+    }
+}
+
+.hamburguer {
+    display: none;
+    z-index: 9999;
+
+    @include responsive-menu() {
+        display: block;
+    }
+}
+
+.responsive {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-color: rgba(10, 12, 16, 0.7);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.nav-hamburguer {
+    list-style: none;
+    margin-top: 100px;
+
+    li {
+        text-align: right;
+    }
+}
+
+.responsive.retreat-top {
+    top: -30px;
+}
+
+.nav-link-hamburguer {
+    display: inline-block;
+    padding: 12px 16px;
+    color: $gray-3;
+    transition: .7s ease;
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+
+    &.be-your-self {
+        color: $red-light;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0%;
+        height: 3px;
+        transition: .7s ease;
+        background: linear-gradient(180deg, rgba(233, 29, 34, 0) 0%, #e91d22 100%);
+    }
+
+    &:hover {
+        color: $white-light;
+
+        &.be-your-self {
+            color: $red-light;
+        }
+
+        &::after {
+            width: 100%;
+        }
+    }
+}
+
+.bx {
+    width: 48px;
+    height: 48px;
+    // background: linear-gradient(225deg, #ea1d22 0%, #b31317 100%);
+    border-radius: 8px;
+    display: none;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 30%;
+        left: 15%;
+        width: 70%;
+        height: 10%;
+        background: #fff;
+        border-radius: 8px;
+        transition: .7s ease;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 60%;
+        left: 45%;
+        width: 40%;
+        height: 10%;
+        background: #fff;
+        border-radius: 8px;
+        transition: .7s ease;
+    }
+
+    @include responsive-menu() {
+        display: block;
+    }
+}
+
+#bx {
+    &:checked ~ label .bx {
+        &::after {
+            transform: rotate(225deg);
+            width: 70%;
+            height: 10%;
+            top: 45%;
+            left: 15%;
+        }
+
+        &::before {
+            transform: rotate(-225deg);
+            width: 70%;
+            height: 10%;
+            top: 45%;
+            left: 15%;
+        }
+    }
+
+    &:checked ~ .responsive {
+        visibility: visible;
+    }
+}
+
+.hamburguer input {
+    display: none;
+}
+
+.nav-social {
+    display: flex;
+
+    svg {
+        cursor: pointer;
+        margin-left: 16px;
+        width: 24px;
+
+        path, circle {
+            transition: .7s ease;
+        }
+
+        &:hover {
+            path, circle {
+                fill: $red-light;
+                transform: translate3d(0, -3px, 0);
+            }
+        }
+    }
+
+    @include responsive-menu() {
+        display: none;
+    }
+}

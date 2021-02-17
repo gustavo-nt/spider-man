@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    {% include "partials/header.html" %}
+    
+    <section class="bg-teaser">
+        <img src="./assets/img/spiderman-see.png" alt="Spider-man">
+    </section>
+
+    <section class="container-teaser">
+        <div class="px-1 logo-teaser item-1">
+            <img src="./assets/img/spiderman-text.png" alt="Logomarca Spider-man">
+        </div>
+        <div class="item-2 content-teaser">
+            <div class="title">
+                <div className="border"></div>
+                <h2>Confira o teaser</h2>
+                <div className="border"></div>
+            </div>
+            <div class="yt-teaser">
+                <iframe width="80%" height="100%" src="https://www.youtube.com/embed/T03PxxuCfDA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
+
+{% block scripts %}
+    <script src="./scripts/teaser.js" type="module"></script>
+{% endblock scripts %}

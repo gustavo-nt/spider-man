@@ -1,0 +1,21 @@
+// Style Titles
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        border-bottom: 1px solid white;
+        margin: 0 16px;
+        width: 31%;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 19px;
+        color: white;
+        letter-spacing: 2px;
+        padding-bottom: 5px;
+        letter-spacing: 1px;
+    }
+}

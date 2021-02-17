@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+{% endblock styles %}
+
+{% block content %}
+    {% include "partials/header.html" %}
+
+    <div class="container-costumes">
+        <div class="title">
+            <div class="border"></div>
+            <h2>Trajes de Miles Morales</h2>
+            <div class="border"></div>
+        </div>
+
+        <div class="navigation-icons">
+            <img class="pagination-prevEl-costumes" src="./assets/svg/left-chevron.svg" onload="SVGInject(this)" alt="Flecha Esquerda"/>
+            <img class="pagination-nextEl-costumes" src="./assets/svg/right-chevron.svg" onload="SVGInject(this)" alt="Flecha Direita"/>
+        </div>
+
+        <div class="content-loader">
+            <div class="loader"></div>
+        </div>
+
+        <div class="swiper-container-costumes">
+            <div class="swiper-wrapper"></div>
+        </div>
+    </div>
+
+    <div class="container-concepts">
+        <div class="title">
+            <div class="border"></div>
+            <h2>Concepts para novos Trajes</h2>
+            <div class="border"></div>
+        </div>
+
+        <div class="navigation-icons">
+            <img class="pagination-prevEl-concepts" src="./assets/svg/left-chevron.svg" onload="SVGInject(this)" alt="Flecha Esquerda"/>
+            <img class="pagination-nextEl-concepts" src="./assets/svg/right-chevron.svg" onload="SVGInject(this)" alt="Flecha Direita"/>
+        </div>
+
+        <div class="content-loader">
+            <div class="loader"></div>
+        </div>
+
+        <div class="swiper-container-concepts">
+            <div class="swiper-wrapper"></div>
+        </div>
+    </div>
+
+    <section class="bg-teaser">
+        <img src="./assets/img/costumes.png" alt="Spiderman">
+    </section>
+{% endblock content %}
+
+{% block scripts %}
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./scripts/costumes.js" type="module"></script>
+    <script src="./scripts/swiper.js"></script>
+
+{% endblock scripts %}

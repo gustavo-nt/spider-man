@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <section class="bg-loader">
+        <img src="./assets/svg/logo-big.svg" onload="SVGInject(this)" />
+    </section>
+
+    {% include "partials/header.html" %}
+
+    <section class="bg-video">
+        <video class="video" autoplay muted loop>
+            <source src="./assets/video/spiderman-index.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section class="container">
+        <div class="container-item-1 item-1">
+            <div class="px-1">
+                <img src="./assets/img/spiderman-text.png" alt="Logomarca Spider-man">
+            </div>
+            <div class="text my-2 item-2">
+                Spider-Man: Miles Morales é um jogo da Insomniac Games, uma continuação direta do Marvel’s Spider-Man, game de 2018 que tinha Peter Parker como personagem principal e que introduziu Miles Morales ao universo dos videogames. Agora, Miles é a estrela do jogo, e se desenvolve como um herói muito interessante ao longo da história.
+            </div>
+            <div class="text item-3">
+                <a class="btn" href="https://store.playstation.com/pt-br/concept/10000649" title="Site Playstation">Compre agora</a>
+                <a class="ml-2 btn-secondary" href="/teaser" title="Assista o teaser">Veja o teaser</a>
+            </div>
+            <div class="brands mt-2 item-4">
+                <img src="./assets/svg/ps.svg" onload="SVGInject(this)" alt="Logo PS"/>
+                <img src="./assets/svg/marvel.svg" class="ml-2" onload="SVGInject(this)" alt="Logo Marvel"/>
+            </div>
+        </div>
+        <div class="container-item-2 item-5">
+            <img class="spiderman" src="./assets/img/spider-man.png" alt="Spider-man"/>
+        </div>
+    </section>
+{% endblock content %}
+
+{% block scripts %}
+    <script src="./scripts/index.js" type="module"></script>
+{% endblock scripts %}

@@ -1,0 +1,42 @@
+// Style Characters
+.container-characters {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 130px;
+    padding-bottom: 36px;
+    padding-right: 16px;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+}
+
+.grid-characters {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(1, 1fr);
+
+    img {
+        margin-bottom: 32px;
+    }
+
+    p {
+        margin-bottom: 16px;
+        letter-spacing: 1.3px;
+        color: $white;
+    }
+}
+
+.logo-characters {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        max-width: 80%;
+    }
+}
+
+@include responsive-characteres();

@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    {% include "partials/header.html" %}
+    <section class="bg-video">
+        <video class="video" autoplay muted loop>
+            <source src="./assets/video/spiderman-about.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section class="container-about">
+        <div class="px-1 logo-marvel item-1">
+            <img src="./assets/img/logo-marvel.png"/>
+        </div>
+        <div class="content-about">
+            <img src="./assets/img/spider-man-2.png" class="item-2" alt="Spider-man">
+            <div class="info">
+                <div class="item-3">Visão Geral do Jogo</div>
+                <p class="item-4">Na mais nova aventura do universo de Marvel's Spider-Man, o adolescente Miles Morales está se adaptando a um novo lar enquanto segue os passos de seu mentor, Peter Parker, como novo Spider-Man.</br>Mas quando uma violenta disputa de forças ameaça destruir sua vizinhança, o aspirante a herói percebe que com grandes poderes também vêm grandes responsabilidades. Para salvar a Nova York da Marvel, Miles deve reconhecer e assumir o título de Spider-Man.</p>
+            </div>
+        </div>
+        <div class="main-features">
+            <div class="main-title item-5">Recursos Principais</div>
+            <div class="grid">
+                <div class="items item-6">
+                    <img src="./assets/img/spiderman-see.png" alt="Spider-man">
+                    <div class="subtitle">A trajetória de Miles Morales</div>
+                    <p>Miles Morales descobre poderes incríveis e explosivos que o diferenciam de seu mentor, Peter Parker. Domine seus ataques Venom bioelétricos, poderes de camuflagem, truques espetaculares com teia, além de dispositivos e habilidades.</p>
+                </div>
+
+                <div class="items item-7">
+                    <img src="./assets/img/spiderman-fight.png" alt="Spider-man">
+                    <div class="subtitle">Uma guerra pelo poder</div>
+                    <p>Uma guerra pelo controle da Nova York da Marvel estourou entre uma empresa de energia desonesta e um exército criminoso de alta tecnologia. Com o seu novo lar ameaçado pelo conflito, Miles deve descobrir o preço de se tornar um herói.</p>
+                </div>
+
+                <div class="items item-8">
+                    <img src="./assets/img/spiderman-jump.png" alt="Spider-man">
+                    <div class="subtitle">Um lar novo e vibrante</div>
+                    <p>Atravesse as ruas cobertas de neve do animado e movimentado bairro de Miles enquanto ele se adapta à nova vizinhança. Quando os limites entre a sua vida pessoal e o combate ao crime começam a desaparecer, Miles descobre em quem pode confiar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
+
+{% block scripts %}
+    <script src="./scripts/about.js" type="module"></script>
+{% endblock scripts %}

@@ -1,0 +1,10 @@
+// Loader
+.loader {
+    display: inline-block;
+    animation: 1s .2s spin infinite;
+    width: 45px;
+    height: 45px;
+    border: 4px solid #ff0000;
+    border-top-color: rgba(#ff0000, .1);
+    border-radius: 50%;
+}

@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    {% include "partials/header.html" %}
+
+    <div class="container-characters">
+        <div class="px-1 logo-characters item-1">
+            <img src="./assets/img/spiderman-text.png" al="Logomarca Spider-man"/>
+        </div>
+
+        <div class="title item-2">
+            <div className="border"></div>
+            <h2>Conheça os personagens do jogo</h2>
+            <div className="border"></div>
+        </div>
+
+        <div class="grid-characters">
+            <div class="item-3">
+                <img src="./assets/img/characters/miles-morales.png" alt="Miles Morales" />
+                <p>Miles Morales é o mais novo Spider-Man da Nova York da Marvel. Após a morte precoce do seu pai, Miles foi apresentado a Peter Parker, que rapidamente virou seu amigo e mentor. Quando Miles foi picado por uma aranha geneticamente modificada da Oscorp, ele desenvolveu poderes únicos e, após meses de insistência, Peter aceitou treiná-lo.</p>
+                <p>Miles inicia o novo capítulo da sua vida no East Harlem</p>
+            </div>
+            <div class="item-4">
+                <img src="./assets/img/characters/peter-parker.png" alt="Peter Parker" />
+                <p>Peter Parker é o Spider-Man original e o mentor de Miles Morales como super-herói. Após a morte traumática do pai de Miles, Peter consegue um trabalho voluntário para Miles no F.E.S.T.A, desencadeando acidentalmente uma série de acontecimentos que deixaram Miles com poderes sobre-humanos comparáveis aos de Peter.</p>
+                <p>Desde então, Peter ajuda Miles a controlar seus poderes.</p>
+            </div>
+            <div class="item-5">
+                <img src="./assets/img/characters/ganke-lee.png" alt="Ganke Lee" />
+                <p>Ganke Lee é o melhor amigo e confidente de Miles Morales. Ganke sempre morou no Harlem e estuda na Brooklyn Visions Academy, onde trabalha para se aprimorar como desenvolvedor de software e dar a Miles o apoio que ele tanto precisa. O app Spider-Man Amigo da Vizinhança do Ganke pretende revolucionar a maneira como os habitantes de Nova York interagem com super-heróis.</p>
+            </div>
+            <div class="item-6">
+                <img src="./assets/img/characters/rio-morales.png" alt="Rio Morales" />
+                <p>Rio Morales é a mãe do Miles e uma candidata em ascensão na corrida eleitoral da Câmara Municipal de Nova York. Após a morte do pai do Miles, Rio e Miles se mudaram de volta para o East Harlem, onde ela nasceu e cresceu.</p>
+                <p>Ela é uma defensora feroz da comunidade do bairro e sempre protege os interesses de seus amigos e vizinhos</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="bg-teaser">
+        <img src="./assets/img/characters.jpg" alt="Face Spider-man">
+    </section>
+{% endblock content %}
+
+{% block scripts %}
+    <script src="./scripts/characters.js" type="module"></script>
+{% endblock scripts %}
