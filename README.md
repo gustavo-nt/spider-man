@@ -49,7 +49,7 @@
 A aplicação é uma Landing Page do jogo Spider Man - Miles Morales. Aplicação desenvolvida durante a FrontWeek e novas features adicionadas posteriormente. 
 
 ### ✅ Demonstração
-<img src="https://github.com/gustavo-nt/spider-man/blob/master/public/assets/video/Spider-man-demostration.mp4" />
+<img src="https://github.com/gustavo-nt/spider-man/blob/master/public/assets/img/Spider-man-git.PNG" />
 
 ### ⚙ Pré-requisitos
 
