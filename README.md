@@ -49,7 +49,7 @@
 A aplicação é uma Landing Page do jogo Spider Man - Miles Morales. Aplicação desenvolvida durante a FrontWeek e novas features adicionadas posteriormente. 
 
 ### ✅ Demonstração
-<img src="https://github.com/gustavo-nt/ecoleta_1.0/blob/main/public/assets/home_ecoleta.PNG" />
+<img src="https://github.com/gustavo-nt/spider-man/blob/master/public/assets/video/Spider-man-demonstration.MP4" />
 
 ### ⚙ Pré-requisitos
 
