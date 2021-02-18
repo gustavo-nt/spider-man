@@ -91,6 +91,7 @@ Esse projeto foi utilizou das seguintes lib:
 - nunjucks
 - swiper
 - gsap
+- svgInject
 
 ### 📝 Licença
 
