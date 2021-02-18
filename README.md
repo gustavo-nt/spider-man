@@ -1,5 +1,5 @@
 <h4 align="center">
-  <img src="https://github.com/gustavo-nt/ecoleta_2.0/blob/master/public/assets/img/logo.png" alt="logo" height="65"/>
+  <img src="https://github.com/gustavo-nt/spider-man/blob/master/public/assets/img/logo.png" alt="logo" height="65"/>
 </h4>
 
 <h1 align="center">
