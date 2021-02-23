@@ -30,13 +30,6 @@
 
 ### 📎 Features 
 
- Efeitos com Tilt
- Animações com GSAP
- Listagem de Trajes
- ideias de novos trajes
- Tooltips nos sliders
- Personagens e descrição do jogo
-
 - [x] Animações com GSAP
 - [x] Listagem de Trajes
 - [x] Uiconcepts de novos Trajes
