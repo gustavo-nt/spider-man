@@ -56,9 +56,6 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 # Clone este repositório
 $ git clone https://github.com/gustavo-nt/spider-man
 
-# Navegue para a pasta
-$ cd spider-man
-
 # Instale as dependências
 $ npm
 
