@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/static/v1?label=node&message=12.13.1&color=339933&logo=node.js" />
   <img src="https://img.shields.io/static/v1?label=html&message=5.0&color=61DAFB&logo=html" />
   <img src="https://img.shields.io/static/v1?label=css&message=3.0&color=0088CC&logo=css" />
-  <img src="https://img.shields.io/static/v1?label=js&message=ecma2018&color=yellow&logo=javascript" />
+  <img src="https://img.shields.io/static/v1?label=js&message=ES6&color=yellow&logo=javascript" />
   <img src="https://img.shields.io/badge/last%21commit-february-important" />
   <img src="https://img.shields.io/badge/license-MIT-success"/>
 </p>
