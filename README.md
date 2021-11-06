@@ -57,10 +57,10 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 $ git clone https://github.com/gustavo-nt/spider-man
 
 # Instale as dependências
-$ npm
+$ yarn ou npm
 
 # Execute a aplicação
-$ npm start
+$ yarn ou npm start
 ```
 
 ### 🚀 Tecnologias
@@ -70,7 +70,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML5
 - CSS3
 - JavaScript
-- NodeJs
 
 ### 📕 Bibliotecas
 
