@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spider-man: Miles Morales</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./assets/favicon/logo.ico">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <script src="./scripts/js_modules/svg-inject.min.js"></script>
+</head>
+
+<body>
+    <div id="">
+
+        <header>
+            <nav class="navbar">
+                <div class="nav-menu ml-2">
+                    <div class="logo">
+                        <img src="./assets/svg/logo.svg" alt="Logo Spiderman" onload="SVGInject(this)" />
+                    </div>
+                    <ul class="nav-list nav-or-hamburguer">
+                        <li>
+                            <a class="nav-link" href="./index.html" title="Página Inicial">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="./about.html" title="Sobre">Sobre</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="./characters.html" title="Personagens">Personagens</a>
+                        </li>
+                        <li>
+                            <a class="nav-link be-your-self" href="./costumes.html" title="Trajes">#Trajes</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-social mr-2">
+                    <img src="./assets/svg/icon-facebook.svg" alt="Ícone Facebook" onload="SVGInject(this)" />
+                    <img src="./assets/svg/icon-instagram.svg" alt="Ícone Instagram" onload="SVGInject(this)" />
+                    <img src="./assets/svg/icon-youtube.svg" alt="Ícone Youtube" onload="SVGInject(this)" />
+                    <img src="./assets/svg/icon-twitter.svg" alt="Ícone Twitter" onload="SVGInject(this)" />
+                </div>
+                <div class="hamburguer nav-or-hamburguer">
+                    <input type="checkbox" id="bx">
+
+                    <label for="bx">
+                        <div class="bx mr-2"></div>
+                    </label>
+
+                    <div class="responsive retreat-top">
+                        <ul class="mx-1 nav-hamburguer">
+                            <li>
+                                <a class="nav-link-hamburguer" href="./index.html" title="Página Inicial">Home</a>
+                            </li>
+                            <li>
+                                <a class="nav-link-hamburguer" href="./about.html" title="Sobre">Sobre</a>
+                            </li>
+                            <li>
+                                <a class="nav-link-hamburguer" href="./characters.html" title="Personagens">Personagens</a>
+                            </li>
+                            <li>
+                                <a class="nav-link-hamburguer be-your-self" href="./costumes.html" title="Trajes">#Trajes</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="bg-video">
+            <video class="video" autoplay muted loop>
+                <source src="./assets/video/spiderman-about.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section class="container-about">
+            <div class="px-1 logo-marvel item-1">
+                <img src="./assets/img/logo-marvel.png" />
+            </div>
+            <div class="content-about">
+                <img src="./assets/img/spider-man-2.png" class="item-2" alt="Spider-man">
+                <div class="info">
+                    <div class="item-3">Visão Geral do Jogo</div>
+                    <p class="item-4">Na mais nova aventura do universo de Marvel's Spider-Man, o adolescente Miles Morales está se adaptando a um novo lar enquanto segue os passos de seu mentor, Peter Parker, como novo Spider-Man.<br>Mas quando uma violenta disputa de forças ameaça destruir sua vizinhança, o aspirante a herói percebe que com grandes poderes também vêm grandes responsabilidades. Para salvar a Nova York da Marvel, Miles deve reconhecer e assumir o título de Spider-Man.</p>
+                </div>
+            </div>
+            <div class="main-features">
+                <div class="main-title item-5">Recursos Principais</div>
+                <div class="grid">
+                    <div class="items item-6">
+                        <img src="./assets/img/spider-man-see.jpg" alt="Spider-man">
+                        <div class="subtitle">A trajetória de Miles Morales</div>
+                        <p>Miles Morales descobre poderes incríveis e explosivos que o diferenciam de seu mentor, Peter Parker. Domine seus ataques Venom bioelétricos, poderes de camuflagem, truques espetaculares com teia, além de dispositivos e habilidades.</p>
+                    </div>
+
+                    <div class="items item-7">
+                        <img src="./assets/img/spider-man-fight.jpg" alt="Spider-man">
+                        <div class="subtitle">Uma guerra pelo poder</div>
+                        <p>Uma guerra pelo controle da Nova York da Marvel estourou entre uma empresa de energia desonesta e um exército criminoso de alta tecnologia. Com o seu novo lar ameaçado pelo conflito, Miles deve descobrir o preço de se tornar um herói.</p>
+                    </div>
+
+                    <div class="items item-8">
+                        <img src="./assets/img/spider-man-jump.jpg" alt="Spider-man">
+                        <div class="subtitle">Um lar novo e vibrante</div>
+                        <p>Atravesse as ruas cobertas de neve do animado e movimentado bairro de Miles enquanto ele se adapta à nova vizinhança. Quando os limites entre a sua vida pessoal e o combate ao crime começam a desaparecer, Miles descobre em quem pode confiar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="./scripts/about.js" type="module"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous"></script>
+</body>
+
+</html>

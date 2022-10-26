@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spider-man: Miles Morales</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./assets/favicon/logo.ico">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <script src="./scripts/js_modules/svg-inject.min.js"></script>
+</head>
+
+<body>
+    <div id="">
+
+        <header>
+            <nav class="navbar">
+                <div class="nav-menu ml-2">
+                    <div class="logo">
+                        <img src="./assets/svg/logo.svg" alt="Logo Spiderman" onload="SVGInject(this)" />
+                    </div>
+                    <ul class="nav-list nav-or-hamburguer">
+                        <li>
+                            <a class="nav-link" href="./index.html" title="Página Inicial">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="./about.html" title="Sobre">Sobre</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="./characters.html" title="Personagens">Personagens</a>
+                        </li>
+                        <li>
+                            <a class="nav-link be-your-self" href="./costumes.html" title="Trajes">#Trajes</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-social mr-2">
+                    <img src="./assets/svg/icon-facebook.svg" alt="Ícone Facebook" onload="SVGInject(this)" />
+                    <img src="./assets/svg/icon-instagram.svg" alt="Ícone Instagram" onload="SVGInject(this)" />
+                    <img src="./assets/svg/icon-youtube.svg" alt="Ícone Youtube" onload="SVGInject(this)" />
+                    <img src="./assets/svg/icon-twitter.svg" alt="Ícone Twitter" onload="SVGInject(this)" />
+                </div>
+                <div class="hamburguer nav-or-hamburguer">
+                    <input type="checkbox" id="bx">
+
+                    <label for="bx">
+                        <div class="bx mr-2"></div>
+                    </label>
+
+                    <div class="responsive retreat-top">
+                        <ul class="mx-1 nav-hamburguer">
+                            <li>
+                                <a class="nav-link-hamburguer" href="./index.html" title="Página Inicial">Home</a>
+                            </li>
+                            <li>
+                                <a class="nav-link-hamburguer" href="./about.html" title="Sobre">Sobre</a>
+                            </li>
+                            <li>
+                                <a class="nav-link-hamburguer" href="./characters.html" title="Personagens">Personagens</a>
+                            </li>
+                            <li>
+                                <a class="nav-link-hamburguer be-your-self" href="./costumes.html" title="Trajes">#Trajes</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container-characters">
+            <div class="px-1 logo-characters item-1">
+                <img src="./assets/img/spiderman-text.png" al="Logomarca Spider-man" />
+            </div>
+
+            <div class="title item-2">
+                <div className="border"></div>
+                <h2>Conheça os personagens do jogo</h2>
+                <div className="border"></div>
+            </div>
+
+            <div class="grid-characters">
+                <div class="item-3">
+                    <img src="./assets/img/characters/miles-morales.png" alt="Miles Morales" />
+                    <p>Miles Morales é o mais novo Spider-Man da Nova York da Marvel. Após a morte precoce do seu pai, Miles foi apresentado a Peter Parker, que rapidamente virou seu amigo e mentor. Quando Miles foi picado por uma aranha geneticamente modificada da Oscorp, ele desenvolveu poderes únicos e, após meses de insistência, Peter aceitou treiná-lo.</p>
+                    <p>Miles inicia o novo capítulo da sua vida no East Harlem</p>
+                </div>
+                <div class="item-4">
+                    <img src="./assets/img/characters/peter-parker.png" alt="Peter Parker" />
+                    <p>Peter Parker é o Spider-Man original e o mentor de Miles Morales como super-herói. Após a morte traumática do pai de Miles, Peter consegue um trabalho voluntário para Miles no F.E.S.T.A, desencadeando acidentalmente uma série de acontecimentos que deixaram Miles com poderes sobre-humanos comparáveis aos de Peter.</p>
+                    <p>Desde então, Peter ajuda Miles a controlar seus poderes.</p>
+                </div>
+                <div class="item-5">
+                    <img src="./assets/img/characters/ganke-lee.png" alt="Ganke Lee" />
+                    <p>Ganke Lee é o melhor amigo e confidente de Miles Morales. Ganke sempre morou no Harlem e estuda na Brooklyn Visions Academy, onde trabalha para se aprimorar como desenvolvedor de software e dar a Miles o apoio que ele tanto precisa. O app Spider-Man Amigo da Vizinhança do Ganke pretende revolucionar a maneira como os habitantes de Nova York interagem com super-heróis.</p>
+                </div>
+                <div class="item-6">
+                    <img src="./assets/img/characters/rio-morales.png" alt="Rio Morales" />
+                    <p>Rio Morales é a mãe do Miles e uma candidata em ascensão na corrida eleitoral da Câmara Municipal de Nova York. Após a morte do pai do Miles, Rio e Miles se mudaram de volta para o East Harlem, onde ela nasceu e cresceu.</p>
+                    <p>Ela é uma defensora feroz da comunidade do bairro e sempre protege os interesses de seus amigos e vizinhos</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="bg-teaser">
+            <img src="./assets/img/characters.jpg" alt="Face Spider-man">
+        </section>
+
+    </div>
+
+    <script src="./scripts/characters.js" type="module"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous"></script>
+</body>
+
+</html>
