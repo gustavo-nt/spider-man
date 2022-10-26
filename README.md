@@ -76,11 +76,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Esse projeto foi utilizou das seguintes lib:
 
-- express
-- npm
-- nunjucks
-- swiper
 - gsap
+- gulp
+- swiper
+- nunjucks
 - svgInject
 
 ### 📝 Licença
